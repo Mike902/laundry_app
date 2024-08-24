@@ -1,0 +1,1 @@
+#simple application using django

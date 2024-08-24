@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link href="{% static 'css/layout.css' %}" rel="stylesheet">
+  {% block style %}
+  
+  {% endblock %}
+</head>
+<body>
+
+  <div class="header-section">
+    <div class="logo">
+      <img src="{% static 'logo/Logo.png' %}" alt="">
+    </div>
+    <div class="navTop">
+      <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About us</li>
+        <a href="signUpIn.html"><li class="icon" ><img src="{% static 'logo/icon1.png' %}" id="login-form" alt=""></li></a>
+      </ul>
+    </div>
+  </div>
+
+  {% block content %}
+
+  {% endblock %}
+
+</body>
+</html>
